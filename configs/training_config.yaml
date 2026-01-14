@@ -1,0 +1,3 @@
+vocab_size: 32000
+d_model: 512
+epochs: 5
