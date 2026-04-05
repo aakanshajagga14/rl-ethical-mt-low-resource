@@ -9,6 +9,7 @@ class TransformerMT(nn.Module):
         self.encoder = nn.TransformerEncoder(encoder_layer, num_layers=num_layers)
         self.fc = nn.Linear(d_model, vocab_size)
 
+
     def forward(self, x):
         x = self.embedding(x)
         x = self.encoder(x)
